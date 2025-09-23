@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Зворотній зв’язок</title>
+</head>
+<body>
+
+<nav>
+    <div>
+        <span><a href="index.html">Енциклопедія</a></span>
+        <ul>
+            <li><a href="some1.html">Хижі динозаври</a></li>
+            <li><a href="some2.html">Травоїдні динозаври</a></li>
+            <li><a href="feedback.html">Зворотній зв’язок</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div>
+    <header>
+        <h1>Зворотній зв’язок</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Персональна інформація</legend>
+
+                <label for="fullname">Прізвище та ім’я:</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="age">Вік:</label><br>
+                <input type="number" id="age" name="age" min="5" max="120" required><br><br>
+
+                <label for="education">Освіта:</label><br>
+                <select id="education" name="education" required>
+                    <option value="">Оберіть...</option>
+                    <option value="повна">Повна</option>
+                    <option value="неповна">Неповна</option>
+                    <option value="вища">Вища</option>
+                    <option value="професійна">Професійна</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <label for="purpose">Мета зворотнього зв’язку:</label><br>
+            <select id="purpose" name="purpose" required>
+                <option value="">Оберіть...</option>
+                <option value="співпраця">Співпраця</option>
+                <option value="скарга">Скарга на порушення права власності</option>
+                <option value="пропозиція">Пропозиція</option>
+                <option value="помилка">Наявність помилки</option>
+            </select><br><br>
+
+            <label for="details">Детально:</label><br>
+            <textarea id="details" name="details" rows="5" cols="40" maxlength="500" required></textarea>
+            <p>* Максимум 500 символів</p><br>
+
+            <label>
+                <input type="checkbox" id="consent" name="consent" required>
+                Я погоджуюся на обробку моєї інформації
+            </label><br><br>
+
+            <button type="submit">Відправити</button>
+            <button type="reset">Очистити</button>
+        </form>
+    </main>
+</div>
+
+<footer>
+    <p>© 2025 Онлайн-енциклопедія Динозаврів</p>
+</footer>
+
+</body>
+</html>
