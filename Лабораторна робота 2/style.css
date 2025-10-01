@@ -173,12 +173,18 @@ form {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 fieldset {
   border: 1px solid #ccc;
   padding: 15px;
-  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 legend {
@@ -186,10 +192,14 @@ legend {
   color: rgb(41, 3, 64);
 }
 
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
 label {
-  display: block;
-  margin-bottom: 5px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 input[type="text"],
@@ -197,7 +207,6 @@ input[type="email"],
 input[type="number"],
 select,
 textarea {
-  width: 100%;
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -212,7 +221,12 @@ textarea {
 .note {
   font-size: 0.9em;
   color: #555;
-  margin-bottom: 10px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
 }
 
 button[type="submit"],
@@ -223,7 +237,6 @@ button[type="reset"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-right: 10px;
 }
 
 button[type="submit"]:hover,

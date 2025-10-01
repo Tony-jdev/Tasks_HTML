@@ -27,45 +27,61 @@
             <fieldset>
                 <legend>Персональна інформація</legend>
 
-                <label for="fullname">Прізвище та ім’я:</label><br>
-                <input type="text" id="fullname" name="fullname" required><br><br>
+                <div class="form-row">
+                    <label for="fullname">Прізвище та ім’я:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
 
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+                <div class="form-row">
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                <label for="age">Вік:</label><br>
-                <input type="number" id="age" name="age" min="5" max="120" required><br><br>
+                <div class="form-row">
+                    <label for="age">Вік:</label><br>
+                    <input type="number" id="age" name="age" min="5" max="120" required>
+                </div>
 
-                <label for="education">Освіта:</label><br>
-                <select id="education" name="education" required>
-                    <option value="">Оберіть...</option>
-                    <option value="повна">Повна</option>
-                    <option value="неповна">Неповна</option>
-                    <option value="вища">Вища</option>
-                    <option value="професійна">Професійна</option>
-                </select>
+                <div class="form-row">
+                    <label for="education">Освіта:</label><br>
+                    <select id="education" name="education" required>
+                        <option value="">Оберіть...</option>
+                        <option value="повна">Повна</option>
+                        <option value="неповна">Неповна</option>
+                        <option value="вища">Вища</option>
+                        <option value="професійна">Професійна</option>
+                    </select>
+                </div>
             </fieldset>
 
-            <label for="purpose">Мета зворотнього зв’язку:</label><br>
-            <select id="purpose" name="purpose" required>
-                <option value="">Оберіть...</option>
-                <option value="співпраця">Співпраця</option>
-                <option value="скарга">Скарга на порушення права власності</option>
-                <option value="пропозиція">Пропозиція</option>
-                <option value="помилка">Наявність помилки</option>
-            </select><br><br>
+            <div class="form-row">
+                <label for="purpose-feedback">Мета зворотнього зв’язку:</label>
+                <select id="purpose-feedback" name="purpose-feedback" required>
+                    <option value="">Оберіть...</option>
+                    <option value="співпраця">Співпраця</option>
+                    <option value="скарга">Скарга на порушення права власності</option>
+                    <option value="пропозиція">Пропозиція</option>
+                    <option value="помилка">Наявність помилки</option>
+                </select>
+            </div>
 
-            <label for="details">Детально:</label><br>
-            <textarea id="details" name="details" rows="5" cols="40" maxlength="500" required></textarea>
-            <p class="note">* Максимум 500 символів</p><br>
+            <div class="form-row">
+                <label for="details">Детально:</label>
+                <textarea id="details" name="details" rows="5" cols="40" maxlength="500" required></textarea>
+                <p class="note">* Максимум 500 символів</p>
+            </div>
 
-            <label class="checkbox">
-                <input type="checkbox" id="consent" name="consent" required>
-                Я погоджуюся на обробку моєї інформації
-            </label><br><br>
+            <div class="form-row">
+                <label class="checkbox">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    Я погоджуюся на обробку моєї інформації
+                </label>
+            </div>
 
-            <button type="submit">Відправити</button>
-            <button type="reset">Очистити</button>
+            <div class="form-actions">
+                <button type="submit">Відправити</button>
+                <button type="reset">Очистити</button>
+            </div>
         </form>
     </main>
 </div>
