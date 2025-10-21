@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Зворотній зв’язок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="nav-content">
+        <span class="logo-text"><a href="index.html">Енциклопедія</a></span>
+        <ul>
+            <li><a href="some1.html">Хижі динозаври</a></li>
+            <li><a href="some2.html">Травоїдні динозаври</a></li>
+            <li><a href="feedback.html">Зворотній зв’язок</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <header>
+        <h1>Зворотній зв’язок</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Персональна інформація</legend>
+
+                <div class="form-row">
+                    <label for="fullname">Прізвище та ім’я:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="age">Вік:</label><br>
+                    <input type="number" id="age" name="age" min="5" max="120" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="education">Освіта:</label><br>
+                    <select id="education" name="education" required>
+                        <option value="">Оберіть...</option>
+                        <option value="повна">Повна</option>
+                        <option value="неповна">Неповна</option>
+                        <option value="вища">Вища</option>
+                        <option value="професійна">Професійна</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <div class="form-row">
+                <label for="purpose-feedback">Мета зворотнього зв’язку:</label>
+                <select id="purpose-feedback" name="purpose-feedback" required>
+                    <option value="">Оберіть...</option>
+                    <option value="співпраця">Співпраця</option>
+                    <option value="скарга">Скарга на порушення права власності</option>
+                    <option value="пропозиція">Пропозиція</option>
+                    <option value="помилка">Наявність помилки</option>
+                </select>
+            </div>
+
+            <div class="form-row" style="position: relative;">
+                <label for="details">Детально:</label>
+                <textarea id="details" name="details" rows="5" cols="40" maxlength="500" required></textarea>
+                <div class="details-tooltip" id="detailsTooltip">Ваша думка для нас важлива! Конкретизуйте мету звернення, будь ласка</div>
+                <p class="note">* Максимум 500 символів</p>
+            </div>
+
+            <div class="form-row">
+                <label class="checkbox">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    Я погоджуюся на обробку моєї інформації
+                </label>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit">Відправити</button>
+                <button type="reset">Очистити</button>
+            </div>
+        </form>
+    </main>
+</div>
+
+<footer>
+    <p>© 2025 Онлайн-енциклопедія Динозаврів</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsField = document.getElementById('details');
+    const tooltip = document.getElementById('detailsTooltip');
+    
+    detailsField.addEventListener('mouseenter', function() {
+        tooltip.classList.add('show');
+    });
+    
+    detailsField.addEventListener('mouseleave', function() {
+        tooltip.classList.remove('show');
+    });
+});
+</script>
+</body>
+</html>

@@ -104,7 +104,7 @@ function generateTestEntries() {
         { id: 3, title: "Історія міста", author: "Сидоренко", shortMessage: "Довга історична розповідь...", readersDay1: 5, readersDay2: 1, publishedAt: "2025-03-03T07:20:00" },
         { id: 4, title: "Культура", author: "Коваленко", shortMessage: "Афіша подій у місті.", readersDay1: 50, readersDay2: 40, publishedAt: "2025-08-10T14:00:00" },
         { id: 5, title: "Наука", author: "Гнатюк", shortMessage: "Нове дослідження", readersDay1: 0, readersDay2: 0, publishedAt: "2025-10-31T23:59:00" },
-        { id: 6, title: "Мистецтво", author: "Орлова", shortMessage: "", readersDay1: 3, readersDay2: 2, publishedAt: "2025-02-01T11:11:00" },
+        { id: 6, title: "Мистецтво", author: "Орлова", shortMessage: "", readersDay1: 3, readersDay2: 2, publishedAt: "2025-07-01T11:11:00" },
         { id: 7, title: "Спорт", author: "Шевчук", shortMessage: "Матчі тижня", readersDay1: 100, readersDay2: 120, publishedAt: "2025-05-20T21:45:00" },
         { id: 8, title: "Подорожі", author: "Мельник", shortMessage: "Маршрути та поради", readersDay1: 7, readersDay2: 2, publishedAt: "2025-07-01T06:00:00" },
         { id: 9, title: "Кулінарія", author: "Бондар", shortMessage: "Рецепти на швидку руку", readersDay1: 12, readersDay2: 12, publishedAt: "2025-11-11T12:00:00" },

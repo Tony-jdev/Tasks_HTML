@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Онлайн-енциклопедія Динозаврів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="nav-content">
+        <span class="logo-text"><a href="index.html">Енциклопедія</a></span>
+        <ul>
+            <li><a href="some1.html">Хижі динозаври</a></li>
+            <li><a href="some2.html">Травоїдні динозаври</a></li>
+            <li><a href="feedback.html">Зворотній зв’язок</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <header>
+        <h1>Енциклопедія Динозаврів</h1>
+    </header>
+
+    <main>
+        <article id="purpose">
+            <h2>Мета створення енциклопедії</h2>
+            <p>
+                Наша мета —
+                <span><i><b><em><u>збирати та поширювати знання</u></em></b></i></span>
+                про динозаврів — величних істот, що панували на Землі понад 160 мільйонів років.
+            </p>
+            <ul>
+                <li>Збирати достовірну наукову інформацію про різні роди динозаврів</li>
+                <li>Надавати приклади викопних знахідок та їхнє значення для науки</li>
+                <li>Забезпечувати зручний доступ до матеріалів для школярів, студентів і дослідників</li>
+            </ul>
+        </article>
+
+        <article id="general__info">
+            <h2>Загальна інформація про динозаврів</h2>
+            <p>
+                Динозаври — це група рептилій, які жили приблизно від 230 до 65 мільйонів років тому,
+                у мезозойську еру. Вони поділялися на дві головні гілки:
+                <b>птахотазових</b> і <b>ящеротазових</b>.
+                Серед них були як велетні — <em>аргентиносаурус</em>,
+                що важив понад 70 тонн, так і дрібні хижаки, розміром з курку.
+            </p>
+            <p>
+                Сьогодні більшість науковців погоджуються, що сучасні птахи є прямими нащадками
+                частини ящеротазових динозаврів, зокрема тероподів.
+                Викопні рештки, відбитки шкіри, сліди лап і навіть збережені пір’я
+                дозволяють реконструювати їхній спосіб життя.
+            </p>
+        </article>
+
+        <aside>
+            <h3>Інформація про авторів</h3>
+            <table border="1">
+                <thead>
+                <tr>
+                    <th colspan="5">Авторський колектив енциклопедії</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="2">Автори</td>
+                    <td>Ім’я</td>
+                    <td>Прізвище</td>
+                    <td>Роль</td>
+                    <td>Контакти</td>
+                </tr>
+                <tr>
+                    <td>Іван</td>
+                    <td>Петренко</td>
+                    <td>Редактор</td>
+                    <td>ivan@example.com</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Автори</td>
+                    <td>Марія</td>
+                    <td>Іваненко</td>
+                    <td>Дослідник</td>
+                    <td>maria@example.com</td>
+                </tr>
+                <tr>
+                    <td>Олександр</td>
+                    <td>Коваленко</td>
+                    <td>Палеонтолог</td>
+                    <td>olex@example.com</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Автори</td>
+                    <td>Наталія</td>
+                    <td>Сидоренко</td>
+                    <td>Ілюстратор</td>
+                    <td>natali@example.com</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Команда підтримки</td>
+                    <td colspan="2">support@dinoencyclopedia.org</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="5">© 2025 Онлайн-енциклопедія Динозаврів</td>
+                </tr>
+                </tfoot>
+            </table>
+        </aside>
+    </main>
+</div>
+
+<footer>
+    <p tabindex="0">Адреса: вул. Прикладна, 1, Київ</p>
+    <p tabindex="0">Телефон: +380 44 123 45 67</p>
+    <a href="https://uk.wikipedia.org/wiki/Динозаври" target="_blank">Wikipedia: Динозаври</a> |
+    <a href="https://www.nhm.ac.uk/discover/dino-directory.html" target="_blank">Dino Directory</a>
+</footer>
+
+<script>
+    // ---------------------------
+    // Налаштування сніжинок для навігаційної панелі
+    // ---------------------------
+    const SNOWFLAKE_COUNT = 15; // кількість сніжинок
+    const BASE_FONT_SIZE = 24;  // базова висота великої літери в навігації (px)
+    const MIN_SIZE = BASE_FONT_SIZE * 2.1; // мінімальний розмір - більше подвоєної висоти
+    const MAX_SIZE = BASE_FONT_SIZE * 3.5; // максимальний розмір
+
+    // ---------------------------
+    // Створення контейнера для сніжинок в навігації
+    // ---------------------------
+    const navSnowContainer = document.createElement('div');
+    navSnowContainer.style.position = 'absolute';
+    navSnowContainer.style.top = '0';
+    navSnowContainer.style.left = '0';
+    navSnowContainer.style.width = '100%';
+    navSnowContainer.style.height = '100%';
+    navSnowContainer.style.pointerEvents = 'none';
+    navSnowContainer.style.overflow = 'hidden';
+    navSnowContainer.style.zIndex = '1'; // поверх навігації
+    document.querySelector('.nav-content').appendChild(navSnowContainer);
+
+    // ---------------------------
+    // Створення сніжинок
+    // ---------------------------
+    const snowflakes = [];
+
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.textContent = ['❄', '❅', '❆', '❋', '❈'][Math.floor(Math.random() * 5)];
+        snowflake.style.position = 'absolute';
+        snowflake.style.whiteSpace = 'pre';
+        snowflake.style.userSelect = 'none';
+        snowflake.style.opacity = 0.3 + Math.random() * 0.4;
+        snowflake.style.color = 'white';
+        snowflake.style.textShadow = '0 0 10px rgba(255,255,255,0.8)';
+        snowflake.style.fontWeight = 'bold';
+
+        const size = Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE;
+        const y = Math.random() * 60;
+        const x = -200 - Math.random() * 100;
+        const speed = 0.5 + Math.random() * 1.0;
+        const drift = Math.random() * 0.5 + 0.1;
+
+        snowflake.style.fontSize = `${size}px`;
+        snowflake.style.left = `${x}px`;
+        snowflake.style.top = `${y}px`;
+
+        navSnowContainer.appendChild(snowflake);
+        snowflakes.push({ 
+            el: snowflake, 
+            x, 
+            y, 
+            speed, 
+            size, 
+            drift
+        });
+    }
+
+    for (let i = 0; i < SNOWFLAKE_COUNT; i++) {
+        createSnowflake();
+    }
+
+    // ---------------------------
+    // Анімація руху сніжинок зліва направо в навігації
+    // ---------------------------
+    function animate() {
+        for (let flake of snowflakes) {
+            flake.x += flake.speed;
+            
+            flake.y += Math.sin(Date.now() / 3000 + flake.x / 80) * flake.drift;
+            
+            const rotation = (Date.now() / 1500 + flake.x / 40) * 8;
+            flake.el.style.transform = `rotate(${rotation}deg)`;
+
+            if (flake.x > window.innerWidth + 100) {
+                flake.x = -200 - Math.random() * 100;
+                flake.y = Math.random() * 60;
+            }
+
+            if (flake.y < 0) flake.y = 0;
+            if (flake.y > 60) flake.y = 60;
+
+            flake.el.style.left = `${flake.x}px`;
+            flake.el.style.top = `${flake.y}px`;
+        }
+        requestAnimationFrame(animate);
+    }
+    animate();
+
+    // ---------------------------
+    // Оновлення позицій при зміні розміру вікна
+    // ---------------------------
+    window.addEventListener('resize', () => {
+        snowflakes.forEach(flake => {
+            if (flake.y > 60) {
+                flake.y = Math.random() * 60;
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

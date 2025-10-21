@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Розділ про SOME1 — Хижі динозаври</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="nav-content" id="nav-some1">
+        <span class="logo-text"><a href="index.html">Енциклопедія</a></span>
+        <ul>
+            <li><a href="some1.html">Хижі динозаври</a></li>
+            <li><a href="some2.html">Травоїдні динозаври</a></li>
+            <li><a href="feedback.html">Зворотній зв’язок</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <header>
+        <h1>Розділ про Хижих Динозаврів</h1>
+    </header>
+
+    <main>
+        <div class="accordion-container">
+            <div class="accordion">
+                <div class="accordion-header">
+                    <h3>📚 Навігація по розділах</h3>
+                    <span class="accordion-toggle">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-scroll">
+                        <ul class="accordion-list">
+                            <li class="accordion-item" data-target="tyrannosaurus">
+                                <span class="dino-icon">🦖</span>
+                                <div class="item-content">
+                                    <strong>Тиранозавр Рекс</strong>
+                                    <span class="item-desc">Найвідоміший хижак крейдового періоду</span>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-target="velociraptor">
+                                <span class="dino-icon">🦅</span>
+                                <div class="item-content">
+                                    <strong>Велцираптор</strong>
+                                    <span class="item-desc">Швидкий невеликий хижак з смертельними кігтями</span>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-target="allosaurus">
+                                <span class="dino-icon">🦕</span>
+                                <div class="item-content">
+                                    <strong>Аллозавр</strong>
+                                    <span class="item-desc">Юрський хижак, що полював групами</span>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-target="spinosaurus">
+                                <span class="dino-icon">🌊</span>
+                                <div class="item-content">
+                                    <strong>Спінозавр</strong>
+                                    <span class="item-desc">Найбільший хижак, мешкав у воді</span>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-target="carnotaurus">
+                                <span class="dino-icon">🦏</span>
+                                <div class="item-content">
+                                    <strong>Карнотавр</strong>
+                                    <span class="item-desc">Швидкий хижак з рогами над очима</span>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-target="giganotosaurus">
+                                <span class="dino-icon">🏔️</span>
+                                <div class="item-content">
+                                    <strong>Гіганотозавр</strong>
+                                    <span class="item-desc">Один з найбільших наземних хижаків</span>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-target="dilophosaurus">
+                                <span class="dino-icon">👑</span>
+                                <div class="item-content">
+                                    <strong>Дилофозавр</strong>
+                                    <span class="item-desc">Один з перших великих хижаків</span>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-target="megalosaurus">
+                                <span class="dino-icon">📜</span>
+                                <div class="item-content">
+                                    <strong>Мегалозавр</strong>
+                                    <span class="item-desc">Перший офіційно описаний динозавр</span>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-target="ceratosaurus">
+                                <span class="dino-icon">🦌</span>
+                                <div class="item-content">
+                                    <strong>Цератозавр</strong>
+                                    <span class="item-desc">Хижак з рогом на носі</span>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-target="utahraptor">
+                                <span class="dino-icon">⚔️</span>
+                                <div class="item-content">
+                                    <strong>Ютахраптор</strong>
+                                    <span class="item-desc">Найбільший представник рапторів</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <label for="dinosaur-search">Пошук:</label>
+            <input type="text" id="dinosaur-search" placeholder="Введіть назву динозавра...">
+        </div>
+
+        <section>
+            <h2>Список відомих хижих динозаврів</h2>
+            <p>
+                Хижі динозаври — це найнебезпечніші та найвідоміші представники мезозойської ери.
+                Вони полювали на інших тварин, мали гострі зуби, сильні лапи та надзвичайну швидкість.
+                Нижче подано добірку найвідоміших видів.
+            </p>
+
+            <div class="dino-list">
+                <!-- Лот 1 -->
+                <article id="tyrannosaurus" data-dinosaur="тиранозавр рекс tyrannosaurus rex">
+                    <img src="images/trex.jpg" alt="Тиранозавр Рекс" width="250">
+                    <h3>Тиранозавр Рекс (Tyrannosaurus Rex)</h3>
+                    <p>
+                        Один із найбільших хижаків пізнього крейдового періоду. Довжина сягала понад 12 метрів,
+                        вага — близько 8 тонн. Відомий своїми гігантськими щелепами та зубами, здатними
+                        розламати кістки.
+                    </p>
+                    <p><b>Автор:</b> Іван Петренко</p>
+                </article>
+
+                <!-- Лот 2 -->
+                <article id="velociraptor" data-dinosaur="велцираптор velociraptor">
+                    <img src="images/velociraptor.jpg" alt="Велцираптор" width="250">
+                    <h3>Велцираптор (Velociraptor)</h3>
+                    <p>
+                        Невеликий, але дуже швидкий хижак, завдовжки лише 2 метри. Мав довгий кіготь на задніх лапах,
+                        яким завдавав смертельних ударів. Імовірно, мав пір’я.
+                    </p>
+                    <p><b>Автор:</b> Марія Іваненко</p>
+                </article>
+
+                <!-- Лот 3 -->
+                <article id="allosaurus" data-dinosaur="аллозавр allosaurus">
+                    <img src="images/allosaurus.jpg" alt="Аллозавр" width="250">
+                    <h3>Аллозавр (Allosaurus)</h3>
+                    <p>
+                        Жив у юрському періоді. Довжина до 9 метрів. Його щелепи були пристосовані до
+                        швидких атак, він міг полювати групами.
+                    </p>
+                    <p><b>Автор:</b> Олександр Коваленко</p>
+                </article>
+
+                <!-- Лот 4 -->
+                <article id="spinosaurus" data-dinosaur="спінозавр spinosaurus">
+                    <img src="images/spinosaurus.jpg" alt="Спінозавр" width="250">
+                    <h3>Спінозавр (Spinosaurus)</h3>
+                    <p>
+                        Один із найбільших хижих динозаврів, більший за тиранозавра. Відомий своїм вітрилоподібним
+                        виростом на спині. Імовірно, мешкав у воді та полював на рибу.
+                    </p>
+                    <p><b>Автор:</b> Наталія Сидоренко</p>
+                </article>
+
+                <!-- Лот 5 -->
+                <article id="carnotaurus" data-dinosaur="карнотавр carnotaurus">
+                    <img src="images/carnotaurus.jpg" alt="Карнотавр" width="250">
+                    <h3>Карнотавр (Carnotaurus)</h3>
+                    <p>
+                        Особливістю були два роги над очима та дуже короткі передні лапи. Швидкий бігун,
+                        який полював на дрібніших динозаврів.
+                    </p>
+                    <p><b>Автор:</b> Іван Петренко</p>
+                </article>
+
+                <!-- Лот 6 -->
+                <article id="giganotosaurus" data-dinosaur="гіганотозавр giganotosaurus">
+                    <img src="images/giganotosaurus.jpg" alt="Гіганотозавр" width="250">
+                    <h3>Гіганотозавр (Giganotosaurus)</h3>
+                    <p>
+                        Жив у Південній Америці. Довжина понад 13 метрів. Вважається одним із найбільших наземних хижаків.
+                    </p>
+                    <p><b>Автор:</b> Марія Іваненко</p>
+                </article>
+
+                <!-- Лот 7 -->
+                <article id="dilophosaurus" data-dinosaur="дилофозавр dilophosaurus">
+                    <img src="images/dilophosaurus.jpg" alt="Дилофозавр" width="250">
+                    <h3>Дилофозавр (Dilophosaurus)</h3>
+                    <p>
+                        Один із перших великих хижаків юрського періоду. Впізнаваний за двома гребенями на голові.
+                    </p>
+                    <p><b>Автор:</b> Олександр Коваленко</p>
+                </article>
+
+                <!-- Лот 8 -->
+                <article id="megalosaurus" data-dinosaur="мегалозавр megalosaurus">
+                    <img src="images/megalosaurus.jpg" alt="Мегалозавр" width="250">
+                    <h3>Мегалозавр (Megalosaurus)</h3>
+                    <p>
+                        Перший динозавр, офіційно описаний науковцями (1824 рік). Став символом початку
+                        палеонтології динозаврів.
+                    </p>
+                    <p><b>Автор:</b> Наталія Сидоренко</p>
+                </article>
+
+                <!-- Лот 9 -->
+                <article id="ceratosaurus" data-dinosaur="цератозавр ceratosaurus">
+                    <img src="images/ceratosaurus.jpg" alt="Цератозавр" width="250">
+                    <h3>Цератозавр (Ceratosaurus)</h3>
+                    <p>
+                        Мав ріг на носі та міцні щелепи. Його рештки знаходять у США та Португалії.
+                    </p>
+                    <p><b>Автор:</b> Іван Петренко</p>
+                </article>
+
+                <!-- Лот 10 -->
+                <article id="utahraptor" data-dinosaur="ютахраптор utahraptor">
+                    <img src="images/utahraptor.jpg" alt="Ютахраптор" width="250">
+                    <h3>Ютахраптор (Utahraptor)</h3>
+                    <p>
+                        Найбільший представник родини рапторів. Досягав до 7 метрів у довжину і мав смертоносні кігті.
+                    </p>
+                    <p><b>Автор:</b> Марія Іваненко</p>
+                </article>
+            </div>
+        </section>
+
+        <div class="back-home">
+            <a href="index.html"><button>Повернутися на головну</button></a>
+        </div>
+    </main>
+</div>
+
+<footer>
+    <p>© 2025 Онлайн-енциклопедія Динозаврів</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const accordionHeader = document.querySelector('.accordion-header');
+        const accordionContent = document.querySelector('.accordion-content');
+        const accordionToggle = document.querySelector('.accordion-toggle');
+        
+        accordionHeader.addEventListener('click', function() {
+            accordionContent.classList.toggle('active');
+            accordionToggle.classList.toggle('rotated');
+        });
+        
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        accordionItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    targetElement.style.boxShadow = '0 0 20px rgba(41, 3, 64, 0.8)';
+                    targetElement.style.transition = 'box-shadow 0.3s ease';
+                    
+                    setTimeout(function() {
+                        targetElement.style.boxShadow = '';
+                    }, 2000);
+                }
+            });
+        });
+        
+        const searchInput = document.getElementById('dinosaur-search');
+        const dinosaurArticles = document.querySelectorAll('.dino-list article');
+        
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase().trim();
+            
+            dinosaurArticles.forEach(function(article) {
+                const dinosaurData = article.getAttribute('data-dinosaur').toLowerCase();
+                
+                if (dinosaurData.includes(searchTerm) || searchTerm === '') {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
