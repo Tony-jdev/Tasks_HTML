@@ -1,0 +1,123 @@
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+legend {
+  font-weight: bold;
+  color: rgb(41, 3, 64);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for details textarea */
+#details:hover {
+  background-color: #f0f8ff;
+  border: 2px solid rgb(41, 3, 64);
+  box-shadow: 0 4px 8px rgba(41, 3, 64, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Tooltip for details field */
+.details-tooltip {
+  position: absolute;
+  right: -250px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(41, 3, 64);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  white-space: normal;
+  text-align: center;
+  pointer-events: none;
+}
+
+.details-tooltip::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 8px solid transparent;
+  border-right-color: rgb(41, 3, 64);
+}
+
+.details-tooltip.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  padding: 10px 20px;
+  background-color: rgb(41, 3, 64);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: rgb(21, 1, 30);
+}
