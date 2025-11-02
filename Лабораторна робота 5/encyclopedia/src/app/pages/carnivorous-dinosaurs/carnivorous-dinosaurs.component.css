@@ -1,0 +1,96 @@
+.dino-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.dino-list article {
+  border: 2px double #1a237e;
+  border-bottom: 4px solid #1a237e;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dino-list article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.dino-list article img:hover {
+  filter: sepia(100%) hue-rotate(190deg) saturate(50%);
+  transition: filter 0.5s ease;
+}
+
+.dino-list article h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: rgb(41, 3, 64);
+}
+
+.dino-list article p:last-of-type {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.9em;
+  color: #555;
+}
+
+#nav-some1 a:visited {
+  color: gold;
+  font-weight: bold;
+}
+
+/* Back Home Button */
+.back-home {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.back-home button {
+  padding: 10px 20px;
+  background-color: rgb(41, 3, 64);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.back-home button:hover {
+  background-color: rgb(21, 1, 30);
+}
+
+.search-container {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.search-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: rgb(41, 3, 64);
+  font-size: 1.1em;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+  outline: none;
+  border-color: rgb(41, 3, 64);
+  box-shadow: 0 0 5px rgba(41, 3, 64, 0.3);
+}

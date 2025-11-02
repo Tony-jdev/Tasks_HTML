@@ -1,0 +1,37 @@
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(41, 3, 64);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* навігація поверх всіх сніжинок */
+  overflow: hidden; /* обмежуємо сніжинки межами навігації */
+  height: 60px; /* фіксована висота навігації */
+}
+
+.nav-content .logo-text a {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-content ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-content ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.nav-content ul li a:hover {
+  text-decoration: underline;
+}

@@ -2,7 +2,6 @@
 
 export interface Dinosaur {
   id: string;
-  name: string;
   nameUk: string;
   nameEn: string;
   type: string; // 'carnivorous' | 'herbivorous'

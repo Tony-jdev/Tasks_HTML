@@ -1,0 +1,39 @@
+header h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(41, 3, 64);
+}
+
+#purpose {
+  margin: 40px 0;
+  padding: 20px;
+}
+
+#purpose p:first-of-type::first-line {
+  font-style: italic;
+}
+
+#purpose ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+#general__info:hover,
+aside:hover {
+  transform: translateY(3%);
+  transition: transform 0.3s ease;
+}
+
+footer p:focus {
+  animation: gradientBackground 3s forwards;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background: transparent;
+  }
+  100% {
+    background: linear-gradient(to right, #a5d6a7, #2e7d32);
+  }
+}

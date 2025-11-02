@@ -1,0 +1,35 @@
+<header>
+  <h1>Розділ про Хижих Динозаврів</h1>
+</header>
+
+<main>
+  <div class="search-container">
+    <label for="dinosaur-search">Пошук:</label>
+    <input id="dinosaur-search" type="text" placeholder="Введіть назву динозавра..." (input)="onSearch($event)">
+  </div>
+
+  <section>
+    <h2>Список відомих хижих динозаврів</h2>
+    <p>
+      Хижі динозаври — це найнебезпечніші представники мезозойської ери. Вони мали гострі зуби,
+      сильні лапи та надзвичайну швидкість.
+    </p>
+
+    <div class="dino-list">
+      @for (dino of filteredDinosaurs; track dino.id) {
+        <article [id]="dino.id" class="dino-card">
+          <img [src]="dino.imagePath" [alt]="dino.nameUk" width="250">
+          <h3>{{ dino.nameUk }} ({{ dino.nameEn }})</h3>
+          <p>{{ dino.description }}</p>
+          <p><b>Автор:</b> {{ dino.author.firstName }} {{ dino.author.lastName }}</p>
+        </article>
+      } @empty {
+        <p>Немає результатів.</p>
+      }
+    </div>
+  </section>
+
+  <div class="back-home">
+    <button routerLink="/">Повернутися на головну</button>
+  </div>
+</main>
