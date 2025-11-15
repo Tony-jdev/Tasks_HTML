@@ -10,25 +10,25 @@
       <div class="form-row">
         <label for="fullname">Прізвище та ім’я:</label>
         <input id="fullname" type="text" formControlName="fullname">
-        <div class="error" *ngIf="f.fullname.touched && f.fullname.invalid">
-          Вкажіть ім’я.
-        </div>
+        @if (f.fullname.touched && f.fullname.invalid) {
+          <div class="error">Вкажіть ім’я.</div>
+        }
       </div>
 
       <div class="form-row">
         <label for="email">E-mail:</label>
         <input id="email" type="email" formControlName="email">
-        <div class="error" *ngIf="f.email.touched && f.email.invalid">
-          Вкажіть коректну електронну адресу.
-        </div>
+        @if (f.email.touched && f.email.invalid) {
+          <div class="error">Вкажіть коректну електронну адресу.</div>
+        }
       </div>
 
       <div class="form-row">
         <label for="age">Вік:</label>
         <input id="age" type="number" formControlName="age">
-        <div class="error" *ngIf="f.age.touched && f.age.invalid">
-          Вік повинен бути від 5 до 120.
-        </div>
+        @if (f.age.touched && f.age.invalid) {
+          <div class="error">Вік повинен бути від 5 до 120.</div>
+        }
       </div>
 
       <div class="form-row">
@@ -40,9 +40,9 @@
           <option value="вища">Вища</option>
           <option value="професійна">Професійна</option>
         </select>
-        <div class="error" *ngIf="f.education.touched && f.education.invalid">
-          Виберіть освіту.
-        </div>
+        @if (f.education.touched && f.education.invalid) {
+          <div class="error">Виберіть освіту.</div>
+        }
       </div>
     </fieldset>
 
@@ -55,9 +55,9 @@
         <option value="пропозиція">Пропозиція</option>
         <option value="помилка">Наявність помилки</option>
       </select>
-      <div class="error" *ngIf="f.purpose.touched && f.purpose.invalid">
-        Виберіть мету звернення.
-      </div>
+      @if (f.purpose.touched && f.purpose.invalid) {
+        <div class="error">Виберіть мету звернення.</div>
+      }
     </div>
 
     <div class="form-row" style="position: relative;">
@@ -68,13 +68,16 @@
                 maxlength="500"
                 (mouseenter)="showTooltip = true"
                 (mouseleave)="showTooltip = false"></textarea>
+
       <div class="details-tooltip" [class.show]="showTooltip">
         Ваша думка для нас важлива! Конкретизуйте мету звернення, будь ласка.
       </div>
+
       <p class="note">* Максимум 500 символів</p>
-      <div class="error" *ngIf="f.details.touched && f.details.invalid">
-        Опишіть деталі (до 500 символів).
-      </div>
+
+      @if (f.details.touched && f.details.invalid) {
+        <div class="error">Опишіть деталі (до 500 символів).</div>
+      }
     </div>
 
     <div class="form-row">
@@ -82,9 +85,9 @@
         <input type="checkbox" formControlName="consent">
         Я погоджуюся на обробку моєї інформації
       </label>
-      <div class="error" *ngIf="f.consent.touched && f.consent.invalid">
-        Потрібно погодитися.
-      </div>
+      @if (f.consent.touched && f.consent.invalid) {
+        <div class="error">Потрібно погодитися.</div>
+      }
     </div>
 
     <div class="form-actions">

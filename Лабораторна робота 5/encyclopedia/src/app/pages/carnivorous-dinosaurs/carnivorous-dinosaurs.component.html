@@ -3,6 +3,11 @@
 </header>
 
 <main>
+  <app-dinosaur-accordion
+    [items]="accordionItems"
+    (select)="scrollToDinosaur($event)">
+  </app-dinosaur-accordion>
+
   <div class="search-container">
     <label for="dinosaur-search">Пошук:</label>
     <input id="dinosaur-search" type="text" placeholder="Введіть назву динозавра..." (input)="onSearch($event)">

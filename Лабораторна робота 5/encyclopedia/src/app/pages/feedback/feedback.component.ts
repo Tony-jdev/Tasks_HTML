@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-feedback',
@@ -40,6 +40,15 @@ export class FeedbackComponent {
   }
 
   get f() {
-    return this.feedbackForm.controls;
+    return this.feedbackForm.controls as {
+      fullname: FormControl;
+      email: FormControl;
+      age: FormControl;
+      education: FormControl;
+      purpose: FormControl;
+      details: FormControl;
+      consent: FormControl;
+    };
   }
+
 }

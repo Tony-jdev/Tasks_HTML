@@ -1,0 +1,56 @@
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.accordion-header {
+  background: #3a0a4a;
+  color: white;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-toggle {
+  transition: transform 0.3s ease;
+}
+
+.accordion-toggle.rotated {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-content.active {
+  max-height: 400px;
+}
+
+.accordion-scroll {
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.accordion-item {
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ececec;
+  transition: background 0.2s;
+}
+
+.accordion-item:hover {
+  background: #f8f1ff;
+}
+
+.dino-icon {
+  font-size: 24px;
+  margin-right: 12px;
+}
